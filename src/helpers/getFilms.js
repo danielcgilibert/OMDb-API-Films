@@ -1,7 +1,7 @@
 
 export const getFilms = async(busqueda) => {
     try {
-    const url = `http://www.omdbapi.com/?t=${busqueda}&apikey=${process.env.REACT_APP_API_KEY}`;
+    const url = `http://www.omdbapi.com/?s=${busqueda}&apikey=${process.env.REACT_APP_API_KEY}`;
     const resp = await fetch(url);
     const data = await resp.json();
 
