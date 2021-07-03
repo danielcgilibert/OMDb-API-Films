@@ -2,7 +2,7 @@ import React from "react";
 
 export const TarjetaPelicula = (films) => {
   const { Title, Year,imdbID,Type, Poster } = films.datos;
-  console.log(films);
+
   return (
     <div className="col-span-3 flex justify-center " key={imdbID}>
       <div className="max-w-md mx-auto  w-full bg-white rounded-xl shadow   v overflow-hidden md:max-w-2xl">
