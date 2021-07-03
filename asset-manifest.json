@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/OMDb-API-Films/static/css/main.73f61959.chunk.css",
+    "main.js": "/OMDb-API-Films/static/js/main.7f08ee29.chunk.js",
+    "main.js.map": "/OMDb-API-Films/static/js/main.7f08ee29.chunk.js.map",
+    "runtime-main.js": "/OMDb-API-Films/static/js/runtime-main.6cbe7c6b.js",
+    "runtime-main.js.map": "/OMDb-API-Films/static/js/runtime-main.6cbe7c6b.js.map",
+    "static/js/2.1c9bfe30.chunk.js": "/OMDb-API-Films/static/js/2.1c9bfe30.chunk.js",
+    "static/js/2.1c9bfe30.chunk.js.map": "/OMDb-API-Films/static/js/2.1c9bfe30.chunk.js.map",
+    "index.html": "/OMDb-API-Films/index.html",
+    "static/css/main.73f61959.chunk.css.map": "/OMDb-API-Films/static/css/main.73f61959.chunk.css.map",
+    "static/js/2.1c9bfe30.chunk.js.LICENSE.txt": "/OMDb-API-Films/static/js/2.1c9bfe30.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cbe7c6b.js",
+    "static/js/2.1c9bfe30.chunk.js",
+    "static/css/main.73f61959.chunk.css",
+    "static/js/main.7f08ee29.chunk.js"
+  ]
+}
