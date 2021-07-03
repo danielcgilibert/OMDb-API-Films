@@ -6,7 +6,7 @@ import HashLoader from "react-spinners/HashLoader";
 
 export const Cargando = () => {
     
-    let [color, setColor] = useState("#FFFFFF");
+    let [color] = useState("#FFFFFF");
   
     return (
         <div className="sweet-loading flex justify-center pt-24">

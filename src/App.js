@@ -8,6 +8,7 @@ import { ErrorNoEncontrado } from "./components/ErrorNoEncontrado/ErrorNoEncontr
 import { Cargando } from "./components/Cargando/Cargando";
 import { BotonCargarMas } from "./components/botonCargarMas/BotonCargarMas";
 
+
 export const App = () => {
   const [busqueda, setBusqueda] = useState("");
   const [films, setFilms] = useState([])
@@ -51,19 +52,10 @@ export const App = () => {
             loading && <Cargando />
           }
         </div>
-        {
-          loading ? "" : error ? <ErrorNoEncontrado /> : (
-            
-            films.map((pelicula) => <TarjetaPelicula datos={pelicula} /> )
-          
-  
-          )
-          
-        }
+        
+        {loading ? "" : error ? <ErrorNoEncontrado /> : (films.map((pelicula) => <TarjetaPelicula datos={pelicula}  key={pelicula.imdbID} /> ))}
 
-        {
-         films.length > 0 && <BotonCargarMas setPage={setPage} page={page} />
-        }
+        {films.length > 0 && loading===false && error===false  && <BotonCargarMas setPage={setPage} page={page} />}
 
 
         
