@@ -1,4 +1,7 @@
 import React from "react";
+import {
+  Link
+} from "react-router-dom";
 
 export const TarjetaPelicula = (pelicula) => {
   const { Title, Year,imdbID,Type, Poster } = pelicula.datos;
@@ -30,9 +33,13 @@ export const TarjetaPelicula = (pelicula) => {
               <i className="far fa-calendar-alt pr-1.5"></i>
               {Year}
             </p>
-            <button className="bg-blue-500 hover:bg-blue-700 transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 text-white font-bold mt-32 py-2 w-full rounded">
-              Details
-            </button>
+
+            <Link to={`/details/${imdbID}`} >
+                <button className="bg-blue-500 hover:bg-blue-700 transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 text-white font-bold mt-32 py-2 w-full rounded">
+                Details
+              </button>
+            </Link>
+            
 
           </div>
         </div>

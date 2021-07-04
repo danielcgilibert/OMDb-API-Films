@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-import { getFilms } from "./helpers/getFilms";
+import { getFilms } from "../helpers/getFilms";
 
-import { Buscador } from "./components/Buscador/Buscador";
-import { TarjetaPelicula } from "./components/TarjetaPelicula/TarjetaPelicula";
-import { ErrorNoEncontrado } from "./components/ErrorNoEncontrado/ErrorNoEncontrado";
-import { Cargando } from "./components/Cargando/Cargando";
-import { BotonCargarMas } from "./components/botonCargarMas/BotonCargarMas";
+import { Buscador } from "../components/Buscador/Buscador";
+import { TarjetaPelicula } from "../components/TarjetaPelicula/TarjetaPelicula";
+import { ErrorNoEncontrado } from "../components/ErrorNoEncontrado/ErrorNoEncontrado";
+import { Cargando } from "../components/Cargando/Cargando";
+import { BotonCargarMas } from "../components/botonCargarMas/BotonCargarMas";
 
 
-export const App = () => {
+export const Home = () => {
   const [busqueda, setBusqueda] = useState("");
   const [films, setFilms] = useState([])
   const [loading, setLoading] = useState(false)
@@ -56,11 +56,6 @@ export const App = () => {
         {loading ? "" : error ? <ErrorNoEncontrado /> : (films.map((pelicula) => <TarjetaPelicula datos={pelicula}  key={pelicula.imdbID} /> ))}
 
         {films.length > 0 && loading===false && error===false  && <BotonCargarMas setPage={setPage} page={page} />}
-
-
-        
-        
-
       
 
       </div>
