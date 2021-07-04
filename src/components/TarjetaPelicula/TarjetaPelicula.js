@@ -5,7 +5,6 @@ import {
 
 export const TarjetaPelicula = (pelicula) => {
   const { Title, Year,imdbID,Type, Poster } = pelicula.datos;
-
   return (
     
     <div className="animate__animated animate__bounceInDown col-span-3 flex justify-center " idpelicula={imdbID}>
