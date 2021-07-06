@@ -7,6 +7,7 @@ export const Buscador = ({ setBusqueda }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    localStorage.setItem('busqueda', inputValue);
     setBusqueda(inputValue);
   };
 

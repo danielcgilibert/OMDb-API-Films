@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import { getFilms } from "../helpers/getFilms";
 
 import { Buscador } from "../components/Buscador/Buscador";
-import { TarjetaPelicula } from "../components/TarjetaPelicula/TarjetaPelicula";
 import { ErrorNoEncontrado } from "../components/ErrorNoEncontrado/ErrorNoEncontrado";
 import { Cargando } from "../components/Cargando/Cargando";
 import { BotonCargarMas } from "../components/botonCargarMas/BotonCargarMas";
+import { ListadoPeliculas } from "../components/ListadoPeliculas/ListadoPeliculas";
 
 
 export const Home = () => {
@@ -18,14 +18,20 @@ export const Home = () => {
 
 
   useEffect(() => {
+
     setPage(1)
   }, [busqueda])
 
   useEffect(() => {
+    localStorage.getItem('busqueda') && setBusqueda(localStorage.getItem('busqueda'))
+
     if(busqueda.length > 0){
       setLoading(true);
+
+
       getFilms(busqueda,page).then((films) => {
         if(films.hasOwnProperty("Search")){
+
           setFilms(films.Search)
           setLoading(false)
           setError(false);
@@ -47,13 +53,13 @@ export const Home = () => {
       <div className="grid grid-cols-3 gap-4">
         <div className="col-start-2 col-span-1 flex justify-center"></div>
         <div className="col-span-3 ">
-          <Buscador setBusqueda={setBusqueda} />
+          <Buscador  setBusqueda={setBusqueda} />
           {
             loading && <Cargando />
           }
         </div>
         
-        {loading ? "" : error ? <ErrorNoEncontrado /> : (films.map((pelicula) => <TarjetaPelicula datos={pelicula}  key={pelicula.imdbID} /> ))}
+        {loading ? "" : error ? <ErrorNoEncontrado /> : <ListadoPeliculas films={films} page={page} /> }
 
         {films.length > 0 && loading===false && error===false  && <BotonCargarMas setPage={setPage} page={page} />}
       

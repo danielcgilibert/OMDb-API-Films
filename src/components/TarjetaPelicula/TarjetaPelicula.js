@@ -7,7 +7,7 @@ export const TarjetaPelicula = (pelicula) => {
   const { Title, Year,imdbID,Type, Poster } = pelicula.datos;
   return (
     
-    <div className="animate__animated animate__bounceInDown col-span-3 flex justify-center " idpelicula={imdbID}>
+    <div className="animate__animated animate__bounceInDown col-span-3 flex justify-center mb-5" idpelicula={imdbID}>
       <div className="max-w-md mx-auto  w-full bg-white rounded-xl shadow   v overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
