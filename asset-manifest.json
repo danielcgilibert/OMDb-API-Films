@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/OMDb-API-Films/static/css/main.04191898.chunk.css",
-    "main.js": "/OMDb-API-Films/static/js/main.18daeafc.chunk.js",
-    "main.js.map": "/OMDb-API-Films/static/js/main.18daeafc.chunk.js.map",
+    "main.js": "/OMDb-API-Films/static/js/main.d9d9e3e8.chunk.js",
+    "main.js.map": "/OMDb-API-Films/static/js/main.d9d9e3e8.chunk.js.map",
     "runtime-main.js": "/OMDb-API-Films/static/js/runtime-main.6cbe7c6b.js",
     "runtime-main.js.map": "/OMDb-API-Films/static/js/runtime-main.6cbe7c6b.js.map",
-    "static/js/2.46bd123b.chunk.js": "/OMDb-API-Films/static/js/2.46bd123b.chunk.js",
-    "static/js/2.46bd123b.chunk.js.map": "/OMDb-API-Films/static/js/2.46bd123b.chunk.js.map",
+    "static/js/2.78e28093.chunk.js": "/OMDb-API-Films/static/js/2.78e28093.chunk.js",
+    "static/js/2.78e28093.chunk.js.map": "/OMDb-API-Films/static/js/2.78e28093.chunk.js.map",
     "index.html": "/OMDb-API-Films/index.html",
     "static/css/main.04191898.chunk.css.map": "/OMDb-API-Films/static/css/main.04191898.chunk.css.map",
-    "static/js/2.46bd123b.chunk.js.LICENSE.txt": "/OMDb-API-Films/static/js/2.46bd123b.chunk.js.LICENSE.txt"
+    "static/js/2.78e28093.chunk.js.LICENSE.txt": "/OMDb-API-Films/static/js/2.78e28093.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6cbe7c6b.js",
-    "static/js/2.46bd123b.chunk.js",
+    "static/js/2.78e28093.chunk.js",
     "static/css/main.04191898.chunk.css",
-    "static/js/main.18daeafc.chunk.js"
+    "static/js/main.d9d9e3e8.chunk.js"
   ]
 }
