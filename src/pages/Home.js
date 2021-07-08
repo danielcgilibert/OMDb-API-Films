@@ -9,7 +9,8 @@ import { BotonCargarMas } from "../components/botonCargarMas/BotonCargarMas";
 import { ListadoPeliculas } from "../components/ListadoPeliculas/ListadoPeliculas";
 
 
-export const Home = () => {
+export const Home = ({login, setLogin}) => {
+  console.log(login.usuario.email);
   const [busqueda, setBusqueda] = useState("");
   const [films, setFilms] = useState([])
   const [loading, setLoading] = useState(false)
@@ -49,17 +50,18 @@ export const Home = () => {
 
 
   return (
-    <div className="container mx-auto min-h-screen min-w-full bg-gradient-to-r from-purple-800 via-purple-300 to-purple-900	 shadow md:shadow-lg">
+    <div className="container mx-auto min-h-screen min-w-full bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-900	 shadow md:shadow-lg">
       <div className="grid grid-cols-3 gap-4">
         <div className="col-start-2 col-span-1 flex justify-center"></div>
         <div className="col-span-3 ">
+          
           <Buscador  setBusqueda={setBusqueda} />
           {
             loading && <Cargando />
           }
         </div>
         
-        {loading ? "" : error ? <ErrorNoEncontrado /> : <ListadoPeliculas films={films} page={page} /> }
+        {loading ? "" : error ? <ErrorNoEncontrado /> : <ListadoPeliculas setLogin={setLogin} login={login} films={films} page={page} /> }
 
         {films.length > 0 && loading===false && error===false  && <BotonCargarMas setPage={setPage} page={page} />}
       
