@@ -51,14 +51,3 @@ npm start
 ## Probar DEMO del proyecto ⚙️
 Demo del proyecto [OMDB](https://danielcgilibert.github.io/OMDb-API-Films/)
 
-
-
-
-## Imágenes del proyecto :camera:
-<p float="left">
-
-<img  width="310" height="300" src="https://i.ibb.co/0Yg7Vt3/home.png">
-<img width="320" height="300" src="https://i.ibb.co/NZ6VXkk/detalles.png">
-
-</p>
-
